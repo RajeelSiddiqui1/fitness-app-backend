@@ -5,7 +5,7 @@ import { authMiddleware } from "../middleware/auth.middleware.js";
 
 const route = express.Router();
 
-route.get("/", getNotifications);
+route.get("/", authMiddleware, getNotifications);
 route.post("/seen", authMiddleware, markAsSeen);
 route.post("/read-all", authMiddleware, markAllAsRead);
 
