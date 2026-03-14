@@ -100,6 +100,6 @@ app.use("/api/alret", alretRoute)
 app.use("/api/notifications", notificationRoute)
 app.use("/api/support", supportRoute)
 
-httpServer.listen(PORT || 5002,()=>{
+httpServer.listen(PORT || 5006,()=>{
     console.log(`PORT running on ${PORT}`)
 } )

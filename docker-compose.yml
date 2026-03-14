@@ -5,6 +5,6 @@ services:
     build: .
     container_name: fitness_backend
     port:
-      - 5002:5002
+      - 5006:5005
 
     restart: always  
