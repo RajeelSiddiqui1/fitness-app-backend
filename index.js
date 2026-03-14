@@ -22,7 +22,7 @@ const app = express();
 
 // CORS for frontend
 app.use(cors({
-  origin: ["https://fitness-app-frontend-blush.vercel.app"],
+  origin: ["https://fitness-app-frontend-blush.vercel.app", "http://localhost:5173", "https://fitness-app-frontend-*.vercel.app"],
   credentials: true
 }));
 
