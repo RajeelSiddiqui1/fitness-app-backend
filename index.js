@@ -71,6 +71,7 @@ export { io, userSockets }
 app.use(cors({
   origin: [
     "http://localhost:5173",
+    "fitness-app-frontend-blush.vercel.app",
     "https://tcfkn8x6-5173.inc1.devtunnels.ms"
   ],
   credentials: true
