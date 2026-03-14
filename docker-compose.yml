@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  backend:
+    build: .
+    container_name: fitness_backend
+    port:
+      - 5002:5002
+
+    restart: always  
