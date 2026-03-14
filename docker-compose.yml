@@ -4,7 +4,6 @@ services:
   backend:
     build: .
     container_name: fitness_backend
-    port:
-      - 5006:5006
-
-    restart: always  
+    ports:
+      - "5006:5006"
+    restart: always

@@ -3,9 +3,11 @@ FROM node:22
 WORKDIR /app
 
 COPY package*.json ./
-RUN npm run install
+
+RUN npm install
 
 COPY . .
-RUN npm run build
 
-EXPOSE 
+EXPOSE 5006
+
+CMD ["npm", "start"]
